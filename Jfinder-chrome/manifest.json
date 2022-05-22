@@ -1,0 +1,36 @@
+{
+	"name": "Rubictron_JFinder",
+	"icons":{
+		"16":"logo/logo.png",
+		"48":"logo/logo.png",
+		"128":"logo/logo.png"
+	},
+	"author": "Asitha Sandakalum" ,
+	"manifest_version": 3,
+	"version": "1",
+	"description": "Auto fill the jira create form data",
+	"permissions": [
+		"activeTab",
+		"scripting",
+		"storage"
+		],
+	"host_permissions":[
+		"https://jira.internal.synopsys.com/*",
+		"http://127.0.0.1:5000/"
+	],
+	"content_scripts": [
+		{
+			"js": ["js/jquery.js","content.js"],
+			"matches": ["https://jira.internal.synopsys.com/*"]
+		}
+	],
+	"action": {
+        "default_icon": "logo/logo.png",
+        "default_title": "Pop up example",
+        "default_popup": "popup.html"
+    },
+	"background": {
+		"service_worker": "background.js"
+	},
+	"options_page": "options.html"
+}

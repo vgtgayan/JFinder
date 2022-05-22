@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Rubictron JFiller</title>
+	<script src="js/jquery.js"></script>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+</head>
+<style>
+	#profile option {
+		border: 1px solid rgb(65, 98, 243);
+		border-radius: 3px;
+		margin-top: 10px;
+	}
+
+	#profile option:checked {
+		background-color: rgb(65, 98, 243);
+		;
+		border: 1px solid rgb(252, 10, 10);
+	}
+
+	.my-custom-scrollbar {
+		position: relative;
+		height: 100%;
+		overflow: auto;
+		padding: 10px 0 20px 0;
+	}
+
+	.container-xxl {
+		min-width: 85%;
+	}
+
+	table {
+         font-family: arial, sans-serif;
+         border-collapse: collapse;
+         width: 100%;
+      }
+
+      td,
+      th {
+         border: 1px solid #dddddd;
+         text-align: left;
+         padding: 8px;
+      }
+
+      tr:nth-child(even) {
+         background-color: #dddddd;
+      }
+
+
+</style>
+
+<body style="height:100vh">
+	<nav class="fixed-top">
+		<div class="row">
+			<h1 style="background-color: #000; padding: 5px 25px; color:#fff ;">
+			
+			<span style="padding-left:2px;color: rgb(155, 0, 175);text-shadow: 1px 1px 0 #fff, -1px 1px 0 #fff, 1px -1px 0 #fff,-1px -1px 0 #fff;">SYNOPSYS</span>
+			<img src="logo/logo.jpg" style="height:2.5rem;padding-bottom:7px"> 
+			<span style="padding-left:2px;color: rgb(0, 0, 0);text-shadow: 1px 1px 0 #fff, -1px 1px 0 #fff, 1px -1px 0 #fff,-1px -1px 0 #fff;">JFINDER</span>
+			
+			</h1>
+		</div>
+	</nav>
+
+	<main class="container-xxl bg-light" style="height: 100vh;">
+		<div class="row">
+			<h3 class="text-info">Rubictron JFinder</h3>
+		 </div>
+		 <hr />
+		 <div class="row" style="font-size: 1.8rem;">
+			<div class="col-md-4">
+				<lable  class="col-form-label" for="mx" >Number of Result</lable>
+				<div class="float-end">
+				   <input  class="form-control" type="number" id="mx" value="10" min="5" max="25"  step="1" >
+				</div>
+			 </div>
+		 	<div class="col-md-2"></div>
+			<div class="col">
+			   <lable for="autoFill" >Enable/Disable Auto Complete</lable>
+			   <div class="float-end form-check form-switch">
+				  <input class="form-check-input" type="checkbox" id="autoFill" >
+			   </div>
+			</div>
+			
+		 </div>
+		 <hr />
+		 <div class="row">
+			<div class="col">
+			   <input type="text" class="form-control" id="search_box">
+			</div>
+		 </div>
+		 <div class="row" style="margin-top: 10px;">
+			<div class="col">
+			   <div class="float-end">
+				  <button class="btn btn-sm btn-primary" style=" font-size: 1.3rem;" id="about">About</button>
+				  <button class="btn btn-sm btn-success" style=" font-size: 1.3rem;" id="search">Search</button>
+				  
+			   </div>
+			</div>
+		 </div>
+		 <hr />
+		 <div class="row" id="data_table" style='display: none;'>
+		 </div>
+		<script src="options.js"></script>
+	</main>
+	<footer class="fixed-bottom" style="background-color: black;">
+		<div class="container-fluid">
+			<span class="text-muted h6 float-end">Asitha Sandakalum-asitha@synopsys.com</span>
+		</div>
+	</footer>
+</body>
+
+
+</html}

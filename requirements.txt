@@ -1,0 +1,17 @@
+numpy
+scipy
+matplotlib
+ipython
+jupyter
+pandas
+logzero # see github.com/metachris/logzero
+jira
+nltk
+scikit-learn
+click
+raven
+#pickle  # mostly pre-installed
+python-Levenshtein
+fuzzywuzzy
+jinja2
+pyside2
